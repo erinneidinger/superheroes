@@ -7,13 +7,13 @@ namespace Superheroes_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialMigration : IMigrationMetadata
+    public sealed partial class UpdatedPropertiesMostRecent1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdatedPropertiesMostRecent1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202001021602296_InitialMigration"; }
+            get { return "202001022040209_UpdatedPropertiesMostRecent1"; }
         }
         
         string IMigrationMetadata.Source

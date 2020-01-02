@@ -9,6 +9,7 @@ namespace Superheroes_Project.Models
     public class Hero
     {
         [Key]
+        public int HeroId { get; set; }
         public string SuperheroName { get; set; }
         public string AlterEgo { get; set; }
         public string PrimaryAbility { get; set; }

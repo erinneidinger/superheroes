@@ -3,7 +3,7 @@ namespace Superheroes_Project.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialMigration : DbMigration
+    public partial class UpdatedPropertiesMostRecent1 : DbMigration
     {
         public override void Up()
         {
@@ -34,11 +34,14 @@ namespace Superheroes_Project.Migrations
                 "dbo.Heroes",
                 c => new
                     {
-                        Id = c.String(nullable: false),
-                        firstName = c.Int(nullable: false),
-                        lastName = c.Int(nullable: false),
+                        HeroId = c.Int(nullable: false, identity: true),
+                        SuperheroName = c.String(),
+                        AlterEgo = c.String(),
+                        PrimaryAbility = c.String(),
+                        SecondaryAbility = c.String(),
+                        CatchPhrase = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.HeroId);
             
             CreateTable(
                 "dbo.AspNetUsers",
